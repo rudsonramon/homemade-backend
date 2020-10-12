@@ -1,0 +1,4 @@
+type PreparationMode{
+    step: Int!
+    description:String
+  }

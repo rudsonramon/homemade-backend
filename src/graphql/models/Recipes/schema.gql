@@ -1,0 +1,44 @@
+type Recipe {
+  id: Int!
+  title: String!
+  author: String
+  link: String
+  category: String
+  subcategory:String
+  ingredients:[Ingredients]
+  preparationMode:[PreparationMode]
+  aditionalInformation:String
+  preparationTime:[PreparationTime]
+  servingSize:String
+}
+
+input RecipeInput{
+  title: String!
+  author: String
+  link: String
+  category: String
+  subcategory:String
+}
+
+input FilterInput{
+  id: Int
+  title: String
+}
+  
+type Query {
+  recipes: [Recipe]
+  recipe(id:Int, category:String):Recipe
+}
+
+type Mutation {
+  createRecipe(
+    data: RecipeInput
+  ):Recipe!
+  updateRecipe(
+    id: Int!
+    data: RecipeInput
+  ):Recipe!
+  deleteRecipe(
+    filter: FilterInput!
+  ):Boolean
+}

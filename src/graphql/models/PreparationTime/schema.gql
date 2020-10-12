@@ -1,0 +1,4 @@
+type PreparationTime{
+    time:Int
+    measure:String
+  }

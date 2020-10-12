@@ -1,0 +1,11 @@
+type Ingredients{
+    id:Int!
+    name:String
+    quantity:Float
+    measure:String
+    observation:String
+  }
+
+  type Query {
+    ingredients: [Ingredients]
+  }

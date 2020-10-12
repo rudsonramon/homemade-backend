@@ -1,0 +1,16 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "ruby.db.elephantsql.com",
+      "database": "ekxqmbrc",
+      "username": "ekxqmbrc",
+      "password": "VgMCI8_P58XlgseRtXfnv-LfnN2qZcDA",
+      "connectString": "postgres://ekxqmbrc:VgMCI8_P58XlgseRtXfnv-LfnN2qZcDA@ruby.db.elephantsql.com:5432/ekxqmbrc"
+    }
+  ],
+  "sqltools.useNodeRuntime": true
+}
