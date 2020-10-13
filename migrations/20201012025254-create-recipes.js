@@ -1,16 +1,20 @@
 'use strict';
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('Recipes', {
+    await queryInterface.createTable('Recipe', {
       id: {
         allowNull: false,
         autoIncrement: true,
+        type: Sequelize.INTEGER
+      },
+      title: {
+        type: Sequelize.STRING,
         primaryKey: true,
-        type: Sequelize.INTEGER
       },
-      id: {
-        type: Sequelize.INTEGER
-      },
+      author: Sequelize.STRING,
+      link: Sequelize.STRING,
+      category: Sequelize.STRING,
+      subcategory: Sequelize.STRING,
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

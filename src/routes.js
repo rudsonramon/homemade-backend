@@ -3,6 +3,7 @@ const RecipeController = require('./controlers/RecipeController')
 
 const routes = express.Router()
 
-routes.post('/ingredients', RecipeController.store)
+//routes.get('/recipes', RecipeController.index)
+routes.post('/recipes', RecipeController.store)
 
 module.exports = routes
